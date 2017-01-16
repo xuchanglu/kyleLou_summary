@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9EI-Nd-zpO" customClass="YSTabBarItem">
+            <rect key="frame" x="0.0" y="0.0" width="52" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人中心" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYU-Ce-euM">
+                    <rect key="frame" x="0.0" y="59" width="49" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7eJ-mG-1AE">
+                    <rect key="frame" x="0.0" y="4" width="52" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="gQ2-AS-uk7"/>
+                        <constraint firstAttribute="width" constant="52" id="iwi-N3-KbO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KYU-Ce-euM" secondAttribute="trailing" constant="3" id="94B-GF-Ad0"/>
+                <constraint firstItem="KYU-Ce-euM" firstAttribute="leading" secondItem="9EI-Nd-zpO" secondAttribute="leading" id="MsQ-dL-jLd"/>
+                <constraint firstItem="7eJ-mG-1AE" firstAttribute="top" secondItem="9EI-Nd-zpO" secondAttribute="top" constant="4" id="RLY-wE-ZAs"/>
+                <constraint firstItem="KYU-Ce-euM" firstAttribute="top" secondItem="7eJ-mG-1AE" secondAttribute="bottom" constant="3" id="mBT-n5-qNM"/>
+                <constraint firstAttribute="centerX" secondItem="7eJ-mG-1AE" secondAttribute="centerX" id="qLm-Fr-svT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="7eJ-mG-1AE" id="zSr-EL-ZO6"/>
+                <outlet property="titleLabel" destination="KYU-Ce-euM" id="eJO-jW-WIe"/>
+            </connections>
+            <point key="canvasLocation" x="-798" y="-172"/>
+        </view>
+    </objects>
+</document>
